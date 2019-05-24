@@ -29,7 +29,7 @@
 <meta property="og:image" content="" />
 <meta property="og:description" content="A curated list of Twitter accounts worth following, writing about the Climate change Emergency, scientist evidence, actions and lot more." />
 <meta name="theme-color" content="#1f620b"/>
-<style rel="stylesheet" href='styles.css' />
+<link rel="stylesheet" href='styles.css' />
 <body>
 	<div id='app'>
 
@@ -38,7 +38,7 @@
 			Top Climate Heroes
 		</h1>
 
-		<div classs='subtitle-header'>
+		<div class='subtitle-header'>
 			A curated list of <strong>Twitter accounts worth following</strong>, writing about the Climate <strike>change</strike> Emergency, scientist evidence, actions and lot more.
 		</div>
 
@@ -108,7 +108,7 @@
 				<img src='logo_white.png'>
 				Twitter Climate Heroes
 			</h1>
-			<p> People worth following </p>
+			<p class='footer-subtitle'> People worth following </p>
 		</div>
 
 		<div class='footer-container'>
@@ -119,14 +119,14 @@
 			  
 			    <div class="tweet-meta">
 			      <p class="tweet-name">J.P. Aulet</p>
-			      <p class="tweet-username white-link"><a href='https://twitter.com/jp_aulet' target='_blank'>@jp_aulet</a></p>
+			      <p class="tweet-username"><a href='https://twitter.com/jp_aulet' target='_blank' class='white-link'>@jp_aulet</a></p>
 			    </div>	  	  
 			</div>			    
 
 			<a href='http://techimpactmakers.com' class='white-link'>Impact Makers</a> is a community of tech people who want to have a positive impact by helping prevent earth’s climate breaking down.
 
 			<a href="http://techimpactmakers.com" target="_blank">
-			  <button class="btnMore"> Find out more about us </button>
+			  <button class="btnMore" style='width:100%;'> Find out more about us </button>
 			</a>
 		</div>
 	</div>
@@ -135,8 +135,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script type="module">
-	import users from './users.json'
-	import impactMakers from './impactMakers.json'
+	//import users from './users.json'
+	//import impactMakers from './impactMakers.json'
 	var app = new Vue({
 	  el: '#app',
 	  data() {
@@ -150,8 +150,8 @@
 	  },
 	  methods: {
 	    getUsers() {
-	      this.users = users;
-	      this.impactMakers = impactMakers;
+	      this.users = [];
+	      this.impactMakers = [];
 	      this.users = this.shuffle(this.users);
 	      this.impactMakers = this.shuffle(this.impactMakers);
 	    },

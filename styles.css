@@ -225,7 +225,7 @@ body {
 	width:100px;
 	margin-right:10px;
 }
-.footer-title p{
+.footer-subtitle{
 	text-align:left;
 	margin-top:-60px;
 	margin-left:110px;
@@ -235,6 +235,6 @@ body {
 	margin:50px auto 20px;
 }
 .white-link{
-	color:#fff;
+	color:#fff !important;
 	font-weight:600;
 }
