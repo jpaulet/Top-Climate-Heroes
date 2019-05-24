@@ -86,7 +86,7 @@
 
 			<div class='twitter-deck'>
 				<div v-for='(impactmaker, index) in impactMakers' :key="`impactMakers-${index}`" class="twitter-card">  
-				    <img class="tweet-img" v-bind:src="impactmaker.img" :alt="'User '+user.username+' avatar'">			    
+				    <img class="tweet-img" v-bind:src="impactmaker.img" :alt="'User '+impactmaker.username+' avatar'">			    
 				  
 				    <div class="tweet-meta">
 				      <p class="tweet-name">{{impactmaker.name}}</p>
@@ -135,22 +135,21 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script type="module" >
-	//import users from './users.json'
-	//import impactMakers from './impactMakers.json'
 	var app = new Vue({
 	  el: '#app',
 	  data() {
 	    return {
 	      users: null,
+	      impactMakers: null,
 	      search: '',
 	      tags: ['writer','scientist','actor','journalist','ngo','activist','business','politician'],
 	      selectedTags: [],
-	      impactMakers: null
+	      loading: true
 	    };
 	  },
 	  methods: {
 	    getUsers() {
-	      this.users = [
+	      	this.users = [
 			  {
 			    "name": "Naomi Klein",
 			    "username": "@NaomiAKlein",
@@ -354,7 +353,7 @@
 			  {
 			    "name": "Heidi Cullen",
 			    "username": "@HeidiCullen",
-			    "message": "Climate scientist at ClimateCentral.org.Chief Science Advisor for theYEARSofLIVING project.Author of The Weather of the Future.",
+			    "message": "Climate scientist at ClimateCentral.org.Chief Science Advisor for the YEARS of LIVING project.Author of The Weather of the Future.",
 			    "url": "https://twitter.com/HeidiCullen",
 			    "label": "scientist",
 			    "img": "https://avatars.io/twitter/HeidiCullen"
@@ -791,8 +790,6 @@
 			    "label": "journalist",
 			    "img": "https://avatars.io/twitter/dana1981"
 			  },
-
-
 			  {
 			    "name": "Dr. Genevieve Guenther",
 			    "username": "@DoctorVive",
@@ -905,8 +902,9 @@
 			    "label": "writer",
 			    "img": "https://avatars.io/twitter/RichardDawkins"
 			  }
-			];	      
-	      this.impactMakers = [
+			];
+
+	      	this.impactMakers = [
 			{
 			    "name": "J.P.Aulet",
 			    "username": "@jp_aulet",
@@ -1019,6 +1017,7 @@
 			    "label": "community",
 			    "img": "https://avatars.io/twitter/ThibautHerpain"
 			},
+			/*
 			{
 			    "name": "Phil",
 			    "username": "@overture8",
@@ -1027,6 +1026,7 @@
 			    "label": "community",
 			    "img": "https://avatars.io/twitter/overture8"
 			},
+			*/
 			{
 			    "name": "Steven McComb",
 			    "username": "@mccombsteven",
@@ -1085,6 +1085,7 @@
 	  },
 	  created() {
 	    this.getUsers();
+	    this.loading = false;
 	  },
 	  computed: {
 	    filteredItems() {
