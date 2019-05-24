@@ -190,28 +190,116 @@
 		border:1px solid #ffffff4d;
 		background-color:#ffffff14;
 	}
+	#footer{
+		width:100%;
+		margin-top:50px;
+		background:#2d313c;
+		color:#fff;
+		box-shadow:0px -4px 3px 0px rgba(50, 50, 50, 0.65);
+		padding:50px;
+		text-align:left;
+	}
+	.title-header{
+		color:rgb(31, 98, 11);
+		width:66%;
+		display:flex;
+		align-items: center;
+	}
+	.title-header img{
+		width:100px;
+		margin-right:10px;
+	}
+	.subtitle-header{
+		margin-bottom:30px;
+		color:#193311;
+		width:66%;
+	}
+	.filterList{
+		padding:10px 10px 30px;
+	}
+	.filterTags{
+		width:75%;
+		float:left;
+	}
+	.searchBox{
+		text-align:right;
+		float:right;
+		width:25%;
+	}
+	.horitzontal-container{
+		width:114%;
+		border-top:1px solid rgb(37, 72, 26);
+		border-bottom:1px solid rgb(37, 72, 26);
+		margin:50px auto; 
+		padding: 30px 50px 15px;
+		text-align:center;
+		color:#fff;
+		background-color: rgb(37, 72, 26);
+		font-weight:600;
+		margin-left:-50px;
+	}
+	.btnMore{
+		width:300px;
+		background-color:rgb(66, 110, 53);
+	}
+	.impactMakers-container{
+		width:100%;
+		padding:30px 50px;
+	}
+	.dark-green{
+		color:rgb(31, 98, 11);
+	}
+	.footer-header{
+		width:80%;
+		margin:0px auto;
+	}
+	.footer-title{
+		color:#fff;
+		width:100%;
+		display:flex;
+		align-items: center;
+		margin:0px auto 30px;
+	}
+	.footer-title img{
+		width:100px;
+		margin-right:10px;
+	}
+	.footer-title p{
+		text-align:left;
+		margin-top:-60px;
+		margin-left:110px;
+	}
+	.footer-container{
+		width:80%;
+		margin:50px auto 20px;
+	}
+	.white-link{
+		color:#fff;
+		font-weight:600;
+	}
 </style>
 <body>
 	<div id='app'>
 
-		<h1 style='color:rgb(31, 98, 11);width:66%;display:flex;align-items: center;'>
-			<img src='logo.png' style='width:100px;margin-right:10px;'>
+		<h1 class='title-header'>
+			<img src='logo.png'>
 			Top Climate Heros
 		</h1>
-		<div style='margin-bottom:30px;color:#193311;width:66%;'>
+
+		<div classs='subtitle-header'>
 			A curated list of <strong>Twitter accounts worth following</strong>, writing about the Climate <strike>change</strike> Emergency, scientist evidence, actions and lot more.
 		</div>
 
 		<div class='header-img'></div>
 
-		<div class='filterList' style='padding:10px 10px 30px;'>
-	        <div class='filterTags' style='width:75%;float:left;'> 
+		<div class='filterList'>
+	        <div class='filterTags'> 
 	          <label class='user-label' v-for='(tag,index) in tags' :key="`tag-${index}`"  v-bind:class="isSelected(tag)" @click='selectTag(tag)'>
 				{{tag}}
 	          </label>
 	        </div> 
 	        
-	        <div class='searchBox col-xs-8 col-sm-5 col-sm-offset-2 col-lg-offset-5' style='text-align:right;float:right;width:25%;'>
+	        <div class='searchBox col-xs-8 col-sm-5 col-sm-offset-2 col-lg-offset-5'>
 	          <input class='searchInput searchUsers' type="text" placeholder="Search.." v-model="search" />
 	        </div>	        
 	    </div>
@@ -232,16 +320,16 @@
 			</div>
 		</div>
 
-		<div style='width:114%;border-top:1px solid rgb(37, 72, 26);border-bottom:1px solid rgb(37, 72, 26);margin:50px auto; padding: 30px 50px 15px;text-align:center;color:#fff;background-color: rgb(37, 72, 26);font-weight:600;margin-left:-50px;'>
+		<div class='horitzontal-container'>
 			Missing somebody? Tell us and we will add them on the list! <br />
 
 			<a href=''>
-				<button class="btnMore" style='width:300px;background-color:rgb(66, 110, 53);'> Add <i>Heros</i> to the list</button>
+				<button class="btnMore"> Add <i>Heros</i> to the list</button>
 			</a>
 		</div>
 
-		<div style='width:100%;padding:30px 50px;'>
-			<h2 style='color:rgb(31, 98, 11);'> ImpactMakers Community </h2>
+		<div class='impactMakers-container'>
+			<h2 class='dark-green'> ImpactMakers Community </h2>
 			<p> Follow us on Twitter too! Here a list of tech people who want to have a positive impact by helping prevent earth’s climate breaking down.</p>
 
 			<div class='twitter-deck'>
@@ -263,30 +351,30 @@
 	</div>
 	
 
-	<div id='footer' style='width:100%;margin-top:50px;background:#2d313c;color:#fff;box-shadow:0px -4px 3px 0px rgba(50, 50, 50, 0.65);padding:50px;text-align:left;'>
+	<div id='footer'>
 
-		<div style='width:80%;margin:0px auto;'>
-			<h1 style='color:#fff;width:100%;display:flex;align-items: center;margin:0px auto 30px;'>
-				<img src='logo_white.png' style='width:100px;margin-right:10px;'>
+		<div class='footer-header'>
+			<h1 class='footer-title'>
+				<img src='logo_white.png'>
 				Twitter Climate Heros
 			</h1>
-			<p style='text-align:left;margin-top:-60px;margin-left:110px;'> People worth following </p>
+			<p> People worth following </p>
 		</div>
 
-		<div style='width:80%;margin:50px auto 20px;'>
+		<div class='footer-container'>
 			An <strong>Impact Makers</strong> project from:
 			
-			<div class="twitter-card twitter-impactMakers" style=''>  
+			<div class="twitter-card twitter-impactMakers">  
 			    <img class="tweet-img" src="https://pbs.twimg.com/profile_images/1055439106141028352/mwoOAzKd_bigger.jpg">			    
 			  
 			    <div class="tweet-meta">
 			      <p class="tweet-name">J.P. Aulet</p>
-			      <p class="tweet-username"><a href='https://twitter.com/jp_aulet' target='_blank' style='color:#fff;'>@jp_aulet</a></p>
+			      <p class="tweet-username white-link"><a href='https://twitter.com/jp_aulet' target='_blank'>@jp_aulet</a></p>
 			    </div>	  	  
 			</div>
 			    
 
-			<a href='http://techimpactmakers.com' style='color:#fff;font-weight:600;'>Impact Makers</a> is a community of tech people who want to have a positive impact by helping prevent earth’s climate breaking down.
+			<a href='http://techimpactmakers.com' class='white-link'>Impact Makers</a> is a community of tech people who want to have a positive impact by helping prevent earth’s climate breaking down.
 
 			<a href="http://techimpactmakers.com" target="_blank">
 			  <button class="btnMore"> Find out more about us </button>
