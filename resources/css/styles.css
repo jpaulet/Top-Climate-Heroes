@@ -12,7 +12,8 @@ body {
 }
 #app{
 	width:100%;
-	padding:30px 50px;
+	padding:10px 50px;
+	min-width: 400px;
 }
 .twitter-deck{
 	z-index: 100;
@@ -95,6 +96,7 @@ body {
 .twitter-card:hover .tweet-follow{
 	opacity:1;
 }
+
 .header-img{
 	background-image:url('../img/header.png');
 	background-size:contain;  
@@ -107,6 +109,31 @@ body {
 	min-height: 180px;
 	z-index:-1;
 	opacity:0.8;
+}
+
+@media (max-width: 767px) {
+	#app{
+		padding:10px 20px !important;
+	}
+	.header-img{
+		display:none;
+	}
+	.subtitle-header,.title-header,.filterTags{
+		width:100% !important;
+	}
+	.title-header img,.footer-title img{
+		width:66px !important;
+		min-width:48px;
+	}
+	.searchInput{
+		display:none;
+	}
+	.footer-title{
+		font-size: 18px;
+	}
+	.footer-subtitle{
+		display: none;
+	}
 }
 .user-label{
 	margin-right:2px;
@@ -236,4 +263,8 @@ body {
 .white-link{
 	color:#fff !important;
 	font-weight:600;
+}
+.black-link{
+	color:#000 !important;
+	font-weight: 600;
 }
