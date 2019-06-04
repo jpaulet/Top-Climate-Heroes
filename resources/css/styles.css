@@ -188,10 +188,9 @@ body {
 	width:25%;
 }
 .horitzontal-container{
-	width:114%;
 	border-top:1px solid rgb(37, 72, 26);
 	border-bottom:1px solid rgb(37, 72, 26);
-	margin:50px auto; 
+	margin:50px -50px; 
 	padding: 30px 50px 15px;
 	text-align:center;
 	color:#fff;
