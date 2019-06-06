@@ -58,7 +58,7 @@
 
 		<div class='twitter-deck'>
 			<div v-for='(user, index) in filteredItems' :key="`user-${index}`" class="twitter-card">  
-			    <img class="tweet-img" v-bind:src="user.img" :alt="'User '+user.username+' avatar'">			    
+			    <img class="tweet-img" v-bind:src="'./resources/avatar/'+user.img+'.jpeg'" :alt="'User '+user.username+' avatar'">			    
 			  
 			    <div class="tweet-meta">
 			      <p class="tweet-name">{{user.name}}</p>
@@ -86,7 +86,7 @@
 
 			<div class='twitter-deck'>
 				<div v-for='(impactmaker, index) in impactMakers' :key="`impactMakers-${index}`" class="twitter-card">  
-				    <img class="tweet-img" v-bind:src="impactmaker.img" :alt="'User '+impactmaker.username+' avatar'">			    
+				    <img class="tweet-img" v-bind:src="'./resources/avatar/'+impactmaker.img+'.jpeg'" :alt="'User '+impactmaker.username+' avatar'">			    
 				  
 				    <div class="tweet-meta">
 				      <p class="tweet-name">{{impactmaker.name}}</p>
@@ -156,7 +156,7 @@
 			    "message": "Journalist, columnist and author of This Changes Everything,The Shock Doctrine and No Logo.",
 			    "url": "https://twitter.com/NaomiAKlein",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/NaomiAKlein"
+			    "img": "NaomiAKlein"
 			  },
 			  {
 			    "name": "Justin Gillis",
@@ -164,7 +164,7 @@
 			    "message": "Former lead writer on climate science for The New York Times, now writing a book on the energy transition.",
 			    "url": "https://twitter.com/JustinHGillis",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/JustinHGillis"
+			    "img": "JustinHGillis"
 			  },
 			  {
 			    "name": "Sasja Beslik",
@@ -172,7 +172,7 @@
 			    "message": "Head of Group Sustainable Finance at Nordea. Also featured on this list of business thinker on Twitter.",
 			    "url": "https://twitter.com/sasjabeslik",
 			    "label": "business",
-			    "img": "https://avatars.io/twitter/sasjabeslik"
+			    "img": "sasjabeslik"
 			  },
 			  {
 			    "name": "Achim Steiner",
@@ -180,7 +180,7 @@
 			    "message": "Administrator at United Nations Development Programme. Former Director at Oxford Martin School, Oxford University. UN Under Secretary-General at UNEP.",
 			    "url": "https://twitter.com/ASteiner",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/ASteiner"
+			    "img": "ASteiner"
 			  },
 			  {
 			    "name": "Patricia Espinosa C",
@@ -188,7 +188,7 @@
 			    "message": "Executive Secretary of UN Climate Change.",
 			    "url": "https://twitter.com/PEspinosaC",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/PEspinosaC"
+			    "img": "PEspinosaC"
 			  },
 			  {
 			    "name": "Mike Hudema",
@@ -196,7 +196,7 @@
 			    "message": "Greenpeace Canada Climate and Energy Campaigner focusing on tarsands,green jobs&solar.",
 			    "url": "https://twitter.com/MikeHudema",
 			    "label": "ngo",
-			    "img": "https://avatars.io/twitter/MikeHudema"
+			    "img": "MikeHudema"
 			  },
 			  {
 			    "name": "Paul Polman",
@@ -204,7 +204,7 @@
 			    "message": "CEO of Unilever.",
 			    "url": "https://twitter.com/PaulPolman",
 			    "label": "business",
-			    "img": "https://avatars.io/twitter/PaulPolman"
+			    "img": "PaulPolman"
 			  },
 			  {
 			    "name": "Anne Hidalgo",
@@ -212,7 +212,7 @@
 			    "message": "Mayor of Paris and president of C40 Cities.",
 			    "url": "https://twitter.com/Anne_Hidalgo",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/Anne_Hidalgo"
+			    "img": "Anne_Hidalgo"
 			  },
 			  {
 			    "name": "Leonardo DiCaprio",
@@ -220,7 +220,7 @@
 			    "message": "Actor and environmentalist.",
 			    "url": "https://twitter.com/LeoDiCaprio",
 			    "label": "actor",
-			    "img": "https://avatars.io/twitter/LeoDiCaprio"
+			    "img": "LeoDiCaprio"
 			  },
 			  {
 			    "name": "Mike Bloomberg",
@@ -228,7 +228,7 @@
 			    "message": "Entrepreneur, philanthropist, and three-term mayor of New York City.",
 			    "url": "https://twitter.com/MikeBloomberg",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/MikeBloomberg"
+			    "img": "MikeBloomberg"
 			  },
 			  {
 			    "name": "Assaad Razzouk",
@@ -236,7 +236,7 @@
 			    "message": "CEO at Sindicatum and contributor at Huffington Post.",
 			    "url": "https://twitter.com/AssaadRazzouk",
 			    "label": "business",
-			    "img": "https://avatars.io/twitter/AssaadRazzouk"
+			    "img": "AssaadRazzouk"
 			  },
 			  {
 			    "name": "Svein T veitdal",
@@ -244,7 +244,7 @@
 			    "message": "Climate lecturer and Director of Klima 2020. Former UN Director.",
 			    "url": "https://twitter.com/tveitdal",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/tveitdal"
+			    "img": "tveitdal"
 			  },
 			  {
 			    "name": "Jim Harris",
@@ -252,7 +252,7 @@
 			    "message": "Canadian author, environmentalist, and politician.",
 			    "url": "https://twitter.com/JimHarris",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/JimHarris"
+			    "img": "JimHarris"
 			  },
 			  {
 			    "name": "Damian Carrington",
@@ -260,7 +260,7 @@
 			    "message": "Environment Editor at the Guardian",
 			    "url": "https://twitter.com/dpcarrington",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/dpcarrington"
+			    "img": "dpcarrington"
 			  },
 			  {
 			    "name": "Brad Plumer",
@@ -268,7 +268,7 @@
 			    "message": "Climate reporter at New York Times. Former vox.com climate reporter.",
 			    "url": "https://twitter.com/bradplumer",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/bradplumer"
+			    "img": "bradplumer"
 			  },
 			  {
 			    "name": "Kees van der Leun",
@@ -276,7 +276,7 @@
 			    "message": "Director at Navigant Energy.",
 			    "url": "https://twitter.com/Sustainable2050",
 			    "label": "ngo",
-			    "img": "https://avatars.io/twitter/Sustainable2050"
+			    "img": "Sustainable2050"
 			  },
 			  {
 			    "name": "Mark Ruffalo",
@@ -284,7 +284,7 @@
 			    "message": "Actor, filmmaker, and social activist.",
 			    "url": "https://twitter.com/MarkRuffalo",
 			    "label": "actor",
-			    "img": "https://avatars.io/twitter/MarkRuffalo"
+			    "img": "MarkRuffalo"
 			  },
 			  {
 			    "name": "Erik Solheim",
@@ -292,7 +292,7 @@
 			    "message": "Head of UN Environment.",
 			    "url": "https://twitter.com/ErikSolheim",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/ErikSolheim"
+			    "img": "ErikSolheim"
 			  },
 			  {
 			    "name": "Arnold Schwarzenegger",
@@ -300,7 +300,7 @@
 			    "message": "Actor, producer, businessman, investor, author, philanthropist, activist, former professional bodybuilder and former Governor of California.",
 			    "url": "https://twitter.com/Schwarzenegger",
 			    "label": "actor",
-			    "img": "https://avatars.io/twitter/Schwarzenegger"
+			    "img": "Schwarzenegger"
 			  },
 			  {
 			    "name": "Nick Nuttall",
@@ -308,7 +308,7 @@
 			    "message": "Director/Spokesperson Communications and Outreach UN Climate Change.",
 			    "url": "https://twitter.com/Nick_Nuttall",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/Nick_Nuttall"
+			    "img": "Nick_Nuttall"
 			  },
 			  {
 			    "name": "Alexander Verbeek",
@@ -316,7 +316,7 @@
 			    "message": "Founder of Institute for Planetary Security.Strategic Policy Advisor on Global Issues.",
 			    "url": "https://twitter.com/Alex_Verbeek",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/Alex_Verbeek"
+			    "img": "Alex_Verbeek"
 			  },
 			  {
 			    "name": "Richard McLellan",
@@ -324,7 +324,7 @@
 			    "message": "CEO of NACC. Tweets about ecology, biodiversity, conservation, and sustainable agriculture.",
 			    "url": "https://twitter.com/RichardMcLellan",
 			    "label": "business",
-			    "img": "https://avatars.io/twitter/RichardMcLellan"
+			    "img": "RichardMcLellan"
 			  },
 			  {
 			    "name": "Eric Holthaus",
@@ -332,7 +332,7 @@
 			    "message": "Meteorologist andstaff writer at Grist.org.",
 			    "url": "https://twitter.com/EricHolthaus",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/EricHolthaus"
+			    "img": "EricHolthaus"
 			  },
 			  {
 			    "name": "Michael E. Mann",
@@ -340,7 +340,7 @@
 			    "message": "Climate Scientist, Professor & Director of the Penn State ESSC. Author of Dire Predictions, The Hockey Stick & the Climate Wars, and The Madhouse Effect.",
 			    "url": "https://twitter.com/MichaelEMann",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/MichaelEMann"
+			    "img": "MichaelEMann"
 			  },
 			  {
 			    "name": "Bernie Sanders",
@@ -348,7 +348,7 @@
 			    "message": "Sen. Bernie Sanders is the longest serving independent in congressional history.",
 			    "url": "https://twitter.com/SenSanders",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/SenSanders"
+			    "img": "SenSanders"
 			  },
 			  {
 			    "name": "Heidi Cullen",
@@ -356,7 +356,7 @@
 			    "message": "Climate scientist at ClimateCentral.org.Chief Science Advisor for the YEARS of LIVING project.Author of The Weather of the Future.",
 			    "url": "https://twitter.com/HeidiCullen",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/HeidiCullen"
+			    "img": "HeidiCullen"
 			  },
 			  {
 			    "name": "Christiana Figueres",
@@ -364,7 +364,7 @@
 			    "message": "Former Executive Secretary of UN Climate Change.",
 			    "url": "https://twitter.com/CFigueres",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/CFigueres"
+			    "img": "CFigueres"
 			  },
 			  {
 			    "name": "Al Gore",
@@ -372,7 +372,7 @@
 			    "message": "Politician and environmentalist.Served as the 45th Vice President of the United States from 1993 to 2001.",
 			    "url": "https://twitter.com/algore",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/algore"
+			    "img": "algore"
 			  },
 			  {
 			    "name": "Catherine McKenna",
@@ -380,7 +380,7 @@
 			    "message": "Canada’s Minister of Environment & Climate Change.",
 			    "url": "https://twitter.com/cathmckenna",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/cathmckenna"
+			    "img": "cathmckenna"
 			  },
 			  {
 			    "name": "Andrea Learned",
@@ -388,7 +388,7 @@
 			    "message": "Communications strategist specialising in influencer relations for climate action/impact nonprofits.",
 			    "url": "https://twitter.com/AndreaLearned",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/AndreaLearned"
+			    "img": "AndreaLearned"
 			  },
 			  {
 			    "name": "George Monbiot",
@@ -396,7 +396,7 @@
 			    "message": "British writer, activist, climate columnist for Guardian.",
 			    "url": "https://twitter.com/GeorgeMonbiot",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/GeorgeMonbiot"
+			    "img": "GeorgeMonbiot"
 			  },
 			  {
 			    "name": "Leo Hickman",
@@ -404,7 +404,7 @@
 			    "message": "Director/editor of Carbon Brief. Served 16 years at the Guardian. Author of A Life Stripped Bare, The Final Call, Will Jellyfish Rule the World?",
 			    "url": "https://twitter.com/LeoHickman",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/LeoHickman"
+			    "img": "LeoHickman"
 			  },
 			  {
 			    "name": "Caroline Lucas",
@@ -412,7 +412,7 @@
 			    "message": "MP for Brighton Pavilion, co-leader of the Green Party in UK.",
 			    "url": "https://twitter.com/CarolineLucas",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/CarolineLucas"
+			    "img": "CarolineLucas"
 			  },
 			  {
 			    "name": "Arik Ring",
@@ -420,7 +420,7 @@
 			    "message": "Expert consultant on solar and other clean-tech technologies, power plants and power systems.",
 			    "url": "https://twitter.com/arikring",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/arikring"
+			    "img": "arikring"
 			  },
 			  {
 			    "name": "Annie Leonard",
@@ -428,7 +428,7 @@
 			    "message": "Executive Director of Greenpeace USA. Creator of the StoryOfStuffvideo, book & community.",
 			    "url": "https://twitter.com/AnnieMLeonard",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/AnnieMLeonard"
+			    "img": "AnnieMLeonard"
 			  },
 			  {
 			    "name": "John Upton",
@@ -436,7 +436,7 @@
 			    "message": "Journalist at ClimateCentral.org.",
 			    "url": "https://twitter.com/johnupton",
 			    "label": "ngo",
-			    "img": "https://avatars.io/twitter/johnupton"
+			    "img": "johnupton"
 			  },
 			  {
 			    "name": "Bill McKibben",
@@ -444,7 +444,7 @@
 			    "message": "Author, educator, environmentalist and founder of 350.org.",
 			    "url": "https://twitter.com/billmckibben",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/billmckibben"
+			    "img": "billmckibben"
 			  },
 			  {
 			    "name": "Katharine Hayhoe",
@@ -452,7 +452,7 @@
 			    "message": "Canadian climate scientist. Professor at Texas Tech University. Founder and CEO ofATMOS Research.",
 			    "url": "https://twitter.com/KHayhoe",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/KHayhoe"
+			    "img": "KHayhoe"
 			  },
 			  {
 			    "name": "Elizabeth May",
@@ -460,7 +460,7 @@
 			    "message": "The leader of the Green Party of Canada. Author and politician.",
 			    "url": "https://twitter.com/ElizabethMay",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/ElizabethMay"
+			    "img": "ElizabethMay"
 			  },
 			  {
 			    "name": "Jason Box",
@@ -468,7 +468,7 @@
 			    "message": "Climatologist, glaciologist contemplating Greenland ice, Arctic and global climate issues.",
 			    "url": "https://twitter.com/climate_ice",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/climate_ice"
+			    "img": "climate_ice"
 			  },
 			  {
 			    "name": "Ray Wills",
@@ -476,7 +476,7 @@
 			    "message": "Researcher and adviser based in Perth, Australia.",
 			    "url": "https://twitter.com/ProfRayWills",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/ProfRayWills"
+			    "img": "ProfRayWills"
 			  },
 			  {
 			    "name": "Terry Hughes",
@@ -484,7 +484,7 @@
 			    "message": "Director of ARC Centre of excellence CoralCoE.",
 			    "url": "https://twitter.com/ProfTerryHughes",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/ProfTerryHughes"
+			    "img": "ProfTerryHughes"
 			  },
 			  {
 			    "name": "Adam Rogers",
@@ -492,7 +492,7 @@
 			    "message": "Author, UNDP and SDGs.",
 			    "url": "https://twitter.com/AdamRogers2030",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/AdamRogers2030"
+			    "img": "AdamRogers2030"
 			  },
 			  {
 			    "name": "Johan Rockström",
@@ -500,7 +500,7 @@
 			    "message": "Executive director at Stockholm Resilience Centre.",
 			    "url": "https://twitter.com/jrockstrom",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/jrockstrom"
+			    "img": "jrockstrom"
 			  },
 			  {
 			    "name": "Mark Z. Jacobson",
@@ -508,7 +508,7 @@
 			    "message": "Professor at Stanford University and leading scholar on renewable energy.",
 			    "url": "https://twitter.com/mzjacobson",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/mzjacobson"
+			    "img": "mzjacobson"
 			  },
 			  {
 			    "name": "Elizabeth May",
@@ -516,7 +516,7 @@
 			    "message": "The leader of the Green Party of Canada. Author, politician, longtime activist and early advocate for the planet.",
 			    "url": "https://twitter.com/ElizabethMay",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/ElizabethMay"
+			    "img": "ElizabethMay"
 			  },
 			  {
 			    "name": "Michael E. Mann",
@@ -524,7 +524,7 @@
 			    "message": "Climate Scientist, Professor and Director of the Penn State ESSC; Author of Dire Predictions, The Hockey Stick & the Climate Wars, and The Madhouse Effect.",
 			    "url": "https://twitter.com/MichaelEMann",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/MichaelEMann"
+			    "img": "MichaelEMann"
 			  },
 			  {
 			    "name": "Dr. Ayana E. Johnson",
@@ -532,7 +532,7 @@
 			    "message": "Marine biologist, founder/CEO @OceanCollectiv, Brooklyn native. Madly in love with our planet and solutions for the climate crisis.",
 			    "url": "https://twitter.com/ayanaeliza",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/ayanaeliza"
+			    "img": "ayanaeliza"
 			  },
 			  {
 			    "name": "Marshall Shepherd",
@@ -540,7 +540,7 @@
 			    "message": "Atmospheric Sciences Professor, Fmr AMS Prez/NASA scientist, Host, Weather Geeks, Alpha, 3x FSU Alum, Forbes Contributor, Tweets just mine. RT not endorsement",
 			    "url": "https://twitter.com/DrShepherd2013",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/DrShepherd2013"
+			    "img": "DrShepherd2013"
 			  },
 			  {
 			    "name": "Katharine Hayhoe",
@@ -548,7 +548,7 @@
 			    "message": "Not suspicious, just Canadian. Climate scientist, @TTUCSC director, poli sci prof, knitter, pastor's wife, mom. TIME100 + Fortune50. First in line for cloning.",
 			    "url": "https://twitter.com/KHayhoe",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/KHayhoe"
+			    "img": "KHayhoe"
 			  },
 			  {
 			    "name": "Esther Ngumbi",
@@ -556,7 +556,7 @@
 			    "message": "University of Illinois @Urbana-Champaign, PhD Entomology, Activist, AAUWAlumna, FoodSecurity, OYESKAGREENS http://www.estherngumbi.com/http://www.fauluacademy.org/",
 			    "url": "https://twitter.com/EstherNgumbi",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/EstherNgumbi"
+			    "img": "EstherNgumbi"
 			  },
 			  {
 			    "name": "Ed Hawkins",
@@ -564,7 +564,7 @@
 			    "message": "Climate scientist at University of Reading | Creator of climate spirals & warming stripes | IPCC AR6 Lead Author | Leads http://weatherrescue.org| Views own",
 			    "url": "https://twitter.com/ed_hawkins",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/ed_hawkins"
+			    "img": "ed_hawkins"
 			  },
 			  {
 			    "name": "Astrid Caldas",
@@ -572,7 +572,7 @@
 			    "message": "Climate Scientist @UCSUSA. Thirsty for knowledge and a broader understanding of all things climate change. Opinions and snarkiness are my own.",
 			    "url": "https://twitter.com/climategeek",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/climategeek"
+			    "img": "climategeek"
 			  },
 			  {
 			    "name": "Daniel Gebregiorgis",
@@ -580,7 +580,7 @@
 			    "message": "Interested in the evolution of Earth's climate: past-present-future",
 			    "url": "https://twitter.com/dgebregiorgis",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/dgebregiorgis"
+			    "img": "dgebregiorgis"
 			  },
 			  {
 			    "name": "Cara Augustenborg",
@@ -588,7 +588,7 @@
 			    "message": "Environmental Scientist @UCDEnvPolicy Fellow; Chair @FoEEurope; Adviser @EPAIreland; #DownToEarth @IvanYatesNT @NewstalkFM @ClimateReality Leader",
 			    "url": "https://twitter.com/CAugustenborg",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/CAugustenborg"
+			    "img": "CAugustenborg"
 			  },
 			  {
 			    "name": "Prakash Kashwan",
@@ -596,7 +596,7 @@
 			    "message": "Prof. @UConn | @SPEAIUB PhD | Book: Democracy in the Woods http://tinyurl.com/jy2gmtu| Climate Governance & Justice; Env. Policy & Politics; Int. Development |",
 			    "url": "https://twitter.com/PKashwan",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/PKashwan"
+			    "img": "PKashwan"
 			  },
 			  {
 			    "name": "Kim Cobb",
@@ -604,7 +604,7 @@
 			    "message": "40% Climate Scientist, 40% Mom, and 20% Indiana Jones. Unapologetically obsessed with carbon. Director, http://globalchange.gatech.edu . She/her",
 			    "url": "https://twitter.com/coralsncaves",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/coralsncaves"
+			    "img": "coralsncaves"
 			  },
 			  {
 			    "name": "Mark Brandon",
@@ -612,7 +612,7 @@
 			    "message": "Polar Oceanography Prof at the @OpenUniversity. Londoner. Proud to have worked with the BBC on #FrozenPlanet, #BluePlanet2 & others. Heart always in the ice",
 			    "url": "https://twitter.com/icey_mark",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/icey_mark"
+			    "img": "icey_mark"
 			  },
 			  {
 			    "name": "Dr. Jacquelyn Gill",
@@ -620,7 +620,7 @@
 			    "message": "Ice Age ecologist in a warming world. Professor @Umaine. Co-host of @ourwarmregards. Like Dana Scully, with mud and mammoths.",
 			    "url": "https://twitter.com/JacquelynGill",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/JacquelynGill"
+			    "img": "JacquelynGill"
 			  },
 			  {
 			    "name": "Antti Lipponen",
@@ -628,7 +628,7 @@
 			    "message": "Research scientist at Finnish Meteorological Institute #Satellite images, #aerosols, #climate, #remotesensing, #dataviz, etc. Opinions are my own.",
 			    "url": "https://twitter.com/anttilip",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/anttilip"
+			    "img": "anttilip"
 			  },
 			  {
 			    "name": "Twila Moon",
@@ -636,7 +636,7 @@
 			    "message": "Cryosphere, climate, #scicomm. Scientist at National Snow and Ice Data Center, University of Colorado. Co-Founder/Co-Director of Wheelhouse Institute",
 			    "url": "https://twitter.com/twilamoon",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/twilamoon"
+			    "img": "twilamoon"
 			  },
 			  {
 			    "name": "Gavin Schmidt",
@@ -644,7 +644,7 @@
 			    "message": "Climate scientist, occasional juggler, even more occasional author, curious about how the world works",
 			    "url": "https://twitter.com/ClimateofGavin",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/ClimateofGavin"
+			    "img": "ClimateofGavin"
 			  },
 			  {
 			    "name": "Richard Betts",
@@ -652,7 +652,7 @@
 			    "message": "Climate Professor, University of Exeter, Met Office, IPCC. Leads main analysis for UK's 3rd Climate Change Risk Assessment https://www.exeter.ac.uk/gsi/ccra3/",
 			    "url": "https://twitter.com/RichardABetts",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/RichardABetts"
+			    "img": "RichardABetts"
 			  },
 			  {
 			    "name": "Ken Caldeira",
@@ -660,7 +660,7 @@
 			    "message": "A scientist researching issues related to climate, carbon, and energy. Carnegie Institution for Science (Global Ecology), Stanford, CA, USA [Personal account]",
 			    "url": "https://twitter.com/KenCaldeira",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/KenCaldeira"
+			    "img": "KenCaldeira"
 			  },
 			  {
 			    "name": "Valerie Masson-Delmotte",
@@ -668,7 +668,7 @@
 			    "message": "French climate scientist at IPSL/LSCE, Paris Saclay; co-chair of IPCC WGI for the AR6. Tweets are my own. Also book lover and tennis player.",
 			    "url": "https://twitter.com/valmasdel",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/valmasdel"
+			    "img": "valmasdel"
 			  },
 			  {
 			    "name": "Glen Peters",
@@ -676,7 +676,7 @@
 			    "message": "Research Director at @CICERO_klima on past, current, and future trends in energy consumption and greenhouse gas emissions",
 			    "url": "https://twitter.com/Peters_Glen",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/Peters_Glen"
+			    "img": "Peters_Glen"
 			  },
 			  {
 			    "name": "Stefan Rahmstorf",
@@ -684,7 +684,7 @@
 			    "message": "Head of Earth System Analysis at the Potsdam Institute for Climate Impact Research; professor of Physics of the Oceans at Potsdam University.",
 			    "url": "https://twitter.com/rahmstorf",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/rahmstorf"
+			    "img": "rahmstorf"
 			  },
 			  {
 			    "name": "Sue Natali",
@@ -692,7 +692,7 @@
 			    "message": "Scientist studying the changing Arctic and the effects on global climate.",
 			    "url": "https://twitter.com/ArcticPermafrst",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/ArcticPermafrst"
+			    "img": "ArcticPermafrst"
 			  },
 			  {
 			    "name": "Peter Gleick",
@@ -700,7 +700,7 @@
 			    "message": "Climate/water scientist; US National Academy of Science; MacArthur Fellow; 2018 Carl Sagan Prize for Science Popularization. Opinions are my own.",
 			    "url": "https://twitter.com/PeterGleick",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/PeterGleick"
+			    "img": "PeterGleick"
 			  },
 			  {
 			    "name": "Simon Lewis",
@@ -708,7 +708,7 @@
 			    "message": "They say I’m outspoken. Author, The Human Planet. Professor of Global Change Science @UCL & @UniversityLeeds. Trying to understand the world, and change it too.",
 			    "url": "https://twitter.com/SimonLLewis",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/SimonLLewis"
+			    "img": "SimonLLewis"
 			  },
 			  {
 			    "name": "Kevin Anchukaitis",
@@ -716,7 +716,7 @@
 			    "message": "Paleoclimatologist, dendrochronologist, earth systems geographer @UofA | @UA_SBS | @TreeRingLabUA. Drought, trees, coyotes, climate, food, & wine. Opinions mine",
 			    "url": "https://twitter.com/thirstygecko",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/thirstygecko"
+			    "img": "thirstygecko"
 			  },
 			  {
 			    "name": "Kevin Anderson",
@@ -724,7 +724,7 @@
 			    "message": "Professor of energy and climate change - interested in translating the science of climate change into carbon budgets, policy goals and mitigation options.",
 			    "url": "https://twitter.com/KevinClimate",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/KevinClimate"
+			    "img": "KevinClimate"
 			  },
 			  {
 			    "name": "Peter Kalmus",
@@ -732,7 +732,7 @@
 			    "message": "Climate scientist shifting fossil fuel culture. Clouds, ecological forecasting. Book: Being the Change: Live Well & Spark a Climate Revolution 🌎🌹🌱 views=mine",
 			    "url": "https://twitter.com/ClimateHuman",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/ClimateHuman"
+			    "img": "ClimateHuman"
 			  },
 			  {
 			    "name": "Mandy Joye",
@@ -740,7 +740,7 @@
 			    "message": "I am an oceanographer studying elemental cycling and climate change. Discovery and education are my passions. Explore, engage & inspire. Views here are my own.",
 			    "url": "https://twitter.com/SeepExplorer",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/SeepExplorer"
+			    "img": "SeepExplorer"
 			  },
 			  {
 			    "name": "Robert Way",
@@ -748,7 +748,7 @@
 			    "message": "Labradorian studying environmental change in northern Canada, Labradormiut (Inuit), assistant professor of physical geography at @queensu. Views are my own.",
 			    "url": "https://twitter.com/LabradorIce",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/LabradorIce"
+			    "img": "LabradorIce"
 			  },
 			  {
 			    "name": "Robert Brulle",
@@ -756,7 +756,7 @@
 			    "message": "Professor, Sociology & Environmental Science, Drexel University, Philadelphia PA. Focus: Environmental Politics and Climate Change",
 			    "url": "https://twitter.com/Rbrulle",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/Rbrulle"
+			    "img": "Rbrulle"
 			  },
 			  {
 			    "name": "David Roberts",
@@ -764,7 +764,7 @@
 			    "message": "Seattleite transplanted from Tennessee; now blogging for http://Vox.com  about energy politics. Climate hawk, deficit dove. Not a doctor.",
 			    "url": "https://twitter.com/drvox",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/drvox"
+			    "img": "drvox"
 			  },
 			  {
 			    "name": "Chris Mooney",
@@ -772,7 +772,7 @@
 			    "message": "Energy and environment writer at @washingtonpost, also tweeting at @postgreen. Views are my own.",
 			    "url": "https://twitter.com/chriscmooney",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/chriscmooney"
+			    "img": "chriscmooney"
 			  },
 			  {
 			    "name": "Sammy Roth",
@@ -780,7 +780,7 @@
 			    "message": "Energy reporter @latimes. Proud alum of @MyDesert @USATODAY @ColumbiaSpec. Dodgers fan, hiker, co-host @TheHatchPodcast. Just trying to be good to people.",
 			    "url": "https://twitter.com/Sammy_Roth",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/Sammy_Roth"
+			    "img": "Sammy_Roth"
 			  },
 			  {
 			    "name": "Dana Nuccitelli",
@@ -788,7 +788,7 @@
 			    "message": "Environmental scientist by day. Freelance climate writer for Yale Climate Connections and others by night. Author of Climatology versus Pseudoscience.",
 			    "url": "https://twitter.com/dana1981",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/dana1981"
+			    "img": "dana1981"
 			  },
 			  {
 			    "name": "Dr. Genevieve Guenther",
@@ -796,7 +796,7 @@
 			    "message": "Author. Founder & Director (link: http://EndClimateSilence.org) EndClimateSilence.org. Affiliate Faculty @NewSchoolTEDC. PhD in Renaissance lit. Next book: Keywords for a New Climate.",
 			    "url": "https://twitter.com/DoctorVive",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/DoctorVive"
+			    "img": "DoctorVive"
 			  },
 			  {
 			    "name": "Kyle Kornack",
@@ -804,7 +804,7 @@
 			    "message": "Working on grassroots acceleration of climate change solutions | ED of @greengas_org | @Forbes30 Under 30 | Echoing Green Fellow | musician | curious human",
 			    "url": "https://twitter.com/krKornack",
 			    "label": "journalist",
-			    "img": "https://avatars.io/twitter/krKornack"
+			    "img": "krKornack"
 			  },
 			  {
 			    "name": "Andrew Almack",
@@ -812,7 +812,7 @@
 			    "message": "Creating abundance, fueling innovation, & loving this big goofy world. Founder @plastics4change ♻️ Changing lives through recycling. #Forbes30under30",
 			    "url": "https://twitter.com/andrewalmack",
 			    "label": "business",
-			    "img": "https://avatars.io/twitter/andrewalmack"
+			    "img": "andrewalmack"
 			  },
 			  {
 			    "name": "Greta Thunberg",
@@ -820,7 +820,7 @@
 			    "message": "16 year old climate activist with Asperger",
 			    "url": "https://twitter.com/GretaThunberg",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/GretaThunberg"
+			    "img": "GretaThunberg"
 			  },
 			  {
 			    "name": "Luisa Neubauer",
@@ -828,7 +828,7 @@
 			    "message": "Climate Activist #fridaysforfuture | Youth ambassador for the @onecampaign I European I contact.luisa.neubauer[at](link: http://gmail.com) gmail.com",
 			    "url": "https://twitter.com/Luisamneubauer",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/Luisamneubauer"
+			    "img": "Luisamneubauer"
 			  },
 			  {
 			    "name": "Dr. Brett Favaro",
@@ -836,7 +836,7 @@
 			    "message": "Ph.D in biology: instructor, scientist. Author: The Carbon Code: How You Can Become a Climate Change Hero. Tweets abt fisheries, climate, and democracy",
 			    "url": "https://twitter.com/LetsFishSmarter",
 			    "label": "scientist",
-			    "img": "https://avatars.io/twitter/LetsFishSmarter"
+			    "img": "LetsFishSmarter"
 			  },
 			  {
 			    "name": "Tobin Bell",
@@ -844,7 +844,7 @@
 			    "message": "Actor, writer, producer with a Masters Degree in Environmental Studies imdb.me/tobinbell | vimeo.com/tobinbell | instagram.com/tobinbellofficial",
 			    "url": "https://twitter.com/officialtobin",
 			    "label": "actor",
-			    "img": "https://avatars.io/twitter/officialtobin"
+			    "img": "officialtobin"
 			  },
 			  {
 			    "name": "Alexander Verbeek",
@@ -852,7 +852,7 @@
 			    "message": "Public Speaker | Moderator | Diplomat | Photographer | Yale World Fellow | Climate Change | Wildlife | Environment | Art | Energy-Water-Food | Sustainability 🌱",
 			    "url": "https://twitter.com/Alex_Verbeek",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/Alex_Verbeek"
+			    "img": "Alex_Verbeek"
 			  },
 			  {
 			    "name": "Jackson Harries",
@@ -860,7 +860,7 @@
 			    "message": "Filmmaker, Photographer, Environmentalist.",
 			    "url": "https://twitter.com/JackHarries",
 			    "label": "",
-			    "img": "https://avatars.io/twitter/JackHarries"
+			    "img": "JackHarries"
 			  },
 			  {
 			    "name": "Christiana Figueres",
@@ -868,7 +868,7 @@
 			    "message": "Bending the emissions curve by 2020. Net zero by 2050. Necessary, desirable and achievable. #GlobalOptimism",
 			    "url": "https://twitter.com/CFigueres",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/CFigueres"
+			    "img": "CFigueres"
 			  },
 			  {
 			    "name": "Joss Garman",
@@ -876,7 +876,7 @@
 			    "message": "UK director @ European Climate Foundation 🌍 @EYL40. Tweets personal.",
 			    "url": "https://twitter.com/jossgarman",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/jossgarman"
+			    "img": "jossgarman"
 			  },
 			  {
 			    "name": "Rupert Read",
@@ -884,7 +884,7 @@
 			    "message": "Philosopher at UEA. Former @TheGreenParty spokesperson, MP candidate, & Councillor. Running for European parliament in East of England. Also on FB & Instagram!",
 			    "url": "https://twitter.com/GreenRupertRead",
 			    "label": "activist",
-			    "img": "https://avatars.io/twitter/GreenRupertRead"
+			    "img": "GreenRupertRead"
 			  },
 			  {
 			    "name": "Al Gore",
@@ -892,7 +892,7 @@
 			    "message": "",
 			    "url": "https://twitter.com/algore",
 			    "label": "politician",
-			    "img": "https://avatars.io/twitter/algore"
+			    "img": "algore"
 			  },
 			  {
 			    "name": "Richard Dawkins",
@@ -900,7 +900,7 @@
 			    "message": "UK biologist & writer. Science, the poetry of reality. Good-humoured ridicule of religions. RTs don't imply endorsement, nor exhaustive research of tweeter's CV",
 			    "url": "https://twitter.com/RichardDawkins",
 			    "label": "writer",
-			    "img": "https://avatars.io/twitter/RichardDawkins"
+			    "img": "RichardDawkins"
 			  }
 			];
 
@@ -911,7 +911,7 @@
 				    "message": "FullStack Web Developer 🤖 - Digital nomad & maker 🌏🚀 - Building apps for social good, learning #blockchain & proud co-founder of @impactMakers_ community 💚",
 				    "url": "https://twitter.com/jp_aulet",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/jp_aulet"
+				    "img": "jp_aulet"
 				},
 				{
 				    "name": "Steven Hylands",
@@ -919,7 +919,7 @@
 				    "message": "Entrepreneur & designer from N.Ireland helping prevent climate breakdown with @impactmakers_. Making @climatechoice. Co-founder & CCO at @get_yomo.",
 				    "url": "https://twitter.com/shylands",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/shylands"
+				    "img": "shylands"
 				},
 				{
 				    "name": "Rachel Franklin",
@@ -927,7 +927,7 @@
 				    "message": "Tech & Dogs 🐶 Web Developer at @marvelapp",
 				    "url": "https://twitter.com/tobequitefrank1",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/tobequitefrank1"
+				    "img": "tobequitefrank1"
 				},
 				{
 				    "name": "Sam Larsen",
@@ -935,7 +935,7 @@
 				    "message": "GI Architect & Director @ (link: http://mapsourced.com) mapsourced.com #Location, #Tech, #Mapping, #Cleantech, #Renewables, #Vegan, #AgTech, #rewilding 🌍🌱🛰️",
 				    "url": "https://twitter.com/samlarsen1",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/samlarsen1"
+				    "img": "samlarsen1"
 				},
 				{
 				    "name": "Baz",
@@ -943,15 +943,15 @@
 				    "message": "I code @200wordsaday and I write short posts about #writing #tech #entrepreneurship #nomadism and #makers every day",
 				    "url": "https://twitter.com/BasileSamel",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/BasileSamel"
+				    "img": "BasileSamel"
 				},
 				{
 				    "name": "Andreas Lorenz",
-				    "username": "@shylands",
+				    "username": "@b_angpow",
 				    "message": "Full stack developer, freelancer, my passion is skiing, currently based austria",
 				    "url": "https://twitter.com/b_angpow",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/b_angpow"
+				    "img": "b_angpow"
 				},
 				{
 				    "name": "Matt Budde",
@@ -959,7 +959,7 @@
 				    "message": "Proud Father, QA Engineer & Web Developer, Gamer, Maker of Pomotron, most definitely a nerd.",
 				    "url": "https://twitter.com/thisismbd",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/thisismbd"
+				    "img": "thisismbd"
 				},
 				{
 				    "name": "Alex Price",
@@ -967,7 +967,7 @@
 				    "message": "Javascript nerd and proud vegan 🌱 Building RemoteOne, the ultimate tool for freelancers and trying to save the world with (link: https://offset.earth) offset.earth 🌍.",
 				    "url": "https://twitter.com/remotealex",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/remotealex"
+				    "img": "remotealex"
 				},
 				{
 				    "name": "David Brown",
@@ -975,7 +975,7 @@
 				    "message": "Applying technolgy for good because we don't need another cat meme or a picture of your meal. 99 problems. #artificialintelligence #sustainability #climate",
 				    "url": "https://twitter.com/davidbr0wn",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/davidbr0wn"
+				    "img": "davidbr0wn"
 				},
 				{
 				    "name": "Glenn Davidson",
@@ -983,7 +983,7 @@
 				    "message": "Archive-dev-lead, event-coordinator, tea-drinker, and game-advocate. @BBCNIreland/@BBCArchive, @FarsetLabs, and @nigamedev. All views my own",
 				    "url": "https://twitter.com/glenndavidson",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/glenndavidson"
+				    "img": "glenndavidson"
 				},
 				{
 				    "name": "Paul McCormack",
@@ -991,7 +991,7 @@
 				    "message": "Course Director for BDes Hons Interaction Design at Belfast School of Art. Teaching the next generation of IxD, UI and UX designers. #ixdbelfast",
 				    "url": "https://twitter.com/ElevenThirty",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/ElevenThirty"
+				    "img": "ElevenThirty"
 				},
 				{
 				    "name": "Kyle Gawley",
@@ -999,7 +999,7 @@
 				    "message": "Entrepreneur & indie maker. Founder @getinvited & (link: http://usegravity.app) usegravity.app Author of The Lifestyle Startup. Location-independent.",
 				    "url": "https://twitter.com/kylegawley",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/kylegawley"
+				    "img": "kylegawley"
 				},
 				{
 				    "name": "Roel van der Kraan",
@@ -1007,7 +1007,7 @@
 				    "message": "⛵️🛥️🏂🏻🏔️🏻‍♂️🐈👬🔥 Now building @get_hippo, previously PM/UX/dev",
 				    "url": "https://twitter.com/roelvanderkraan",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/roelvanderkraan"
+				    "img": "roelvanderkraan"
 				},
 				{
 				    "name": "Thibaut Herpain",
@@ -1015,7 +1015,7 @@
 				    "message": "🇧🇪Belgian 💻Frontend developer",
 				    "url": "https://twitter.com/ThibautHerpain",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/ThibautHerpain"
+				    "img": "ThibautHerpain"
 				},
 				{
 				    "name": "Phil",
@@ -1023,7 +1023,7 @@
 				    "message": "Ruby & Elixir programmer. Liverpool fan.",
 				    "url": "https://twitter.com/overture8",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/overture8"
+				    "img": "overture8"
 				},
 				{
 				    "name": "Steven McComb",
@@ -1031,7 +1031,7 @@
 				    "message": "Proud geek, sports addict and cat owner.",
 				    "url": "https://twitter.com/mccombsteven",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/mccombsteven"
+				    "img": "mccombsteven"
 				},
 				{
 				    "name": "Craig Anderson",
@@ -1039,7 +1039,7 @@
 				    "message": "Freelance web developer 👨🏻‍💻 specialising in Python 🐍 and Django. 🇦🇺 in 🇬🇧🇪🇺. #FriendOfDeSoto 🖖 #AFGANG 👌 #MightyWest he/him",
 				    "url": "https://twitter.com/_craiga",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/_craiga"
+				    "img": "_craiga"
 				},
 				{
 				    "name": "Paul McBride",
@@ -1047,8 +1047,32 @@
 				    "message": "Belfast based #JavaScript and #Ruby developer, nerd and humanist. @egghead instructor. Founder of @WeCodeNI. He/Him.",
 				    "url": "https://twitter.com/ThePaulMcBride",
 				    "label": "community",
-				    "img": "https://avatars.io/twitter/ThePaulMcBride"
+				    "img": "ThePaulMcBride"
 				},
+				{
+				    "name": "Jesper Fogh",
+				    "username": "@jepster_dk",
+				    "message": "Interactive Designer/Developer // Co-founder of IxD Company Circuit Circus // Currently working on (link: https://www.beroli.eu) beroli.eu",
+				    "url": "https://twitter.com/jepster_dk",
+				    "label": "community",
+				    "img": "jepster_dk"
+				},
+				{
+				    "name": "James Singleton",
+				    "username": "@shutdownscanner",
+				    "message": "Web app book, (link: http://ASP.NET) ASP.NET Core 2 High Performance: (link: https://unop.uk/book) unop.uk/book 📙",
+				    "url": "https://twitter.com/shutdownscanner",
+				    "label": "community",
+				    "img": "shutdownscanner"
+				},
+				{
+				    "name": "Martin Hughes",
+				    "username": "@MartinHughes",
+				    "message": "Web Designer. #UX Designer. Consultant. Engineer. Art. #Design. Nature. Karate. Websites. #UXdesign (link: https://martinhughesportfolio.com/) martinhughesportfolio.com ▲▲ *All views are my own*",
+				    "url": "https://twitter.com/MartinHughes",
+				    "label": "community",
+				    "img": "MartinHughes"
+				}
 		  	];
 	      
 	      	this.users = this.shuffle(this.users);
